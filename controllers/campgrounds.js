@@ -41,8 +41,8 @@ module.exports.showCampground=async (req, res) => {
         return res.redirect('/campgrounds')
     }
     //console.log(campground);
-    //res.render('campgrounds/show', { campground });
-    res.send(campground)
+    res.render('campgrounds/show', { campground });
+    //res.send(campground)
 }
 module.exports.renderEditForm=async (req, res) => {
     const{id}=req.params;
